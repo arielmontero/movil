@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
@@ -8,7 +8,7 @@ $(document).ready(function(){
   });
 });
 </script>
-
+ -->
 
 <?php
 if($_SESSION["autentica"] !== "SIP"){
@@ -26,24 +26,26 @@ $res=$sim->ControlPermiso($us,$per);
 if ($res== 1) {
 	?>
 <div class="box-principal">
-	<h3 class="titulo">Linea</h3>
 		<div class="panel panel-success">
-			<div class="panel-heading">
-				<table class="table table-striped table-hover">
-					<td><h3 class="panel-title"><a href="<?php echo URL;?>sim/crear" class="btn btn-success">Crear Nuevo</a></h3></td>
-					<td>
-					<!--	<form class="form-inline my-2 my-lg-0" action="<?php echo URL;?>sim/buscar" method="POST">
-				      <input class="form-control mr-sm-2" type="text" name="Sim" placeholder="Linea">
-				      <button class="btn btn-secondary my-2 my-sm-0"  type="submit">Buscar</button>-->
-				      		<form class="form-inline my-2 my-lg-0" action="" method="POST">
-							<input class="form-control mr-sm-2" id="myInput" type="text" placeholder="Buscar...">	
-				    </form>
-				    </form>
-					</td>
-			</table>
-			</div>
+			<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="<?php echo URL;?>"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+			<li class="breadcrumb-item"><a href="<?php echo URL;?>sim">Sim</a></li>
+			<li class="breadcrumb-item active" aria-current="page">index</li>
+		</ol>
+		<div class="card">  
+		<div class="card-header" style="background-color: rgba(68, 138, 255);">
+			<h4 class="card-title" style="color: rgba(255,255,255,0.9);"><b>Numero Sim</b></h4>    
+		</div>
+
+		<nav aria-label="breadcrumb">  
+		<div class="card">  
+		<div class="card-body">
+		<h3 class="panel-title"><a href="<?php echo URL;?>sim/crear" class="btn btn-success">Crear Nuevo</a></h3>
+		</div>
+		</div>
+		</nav>  
 			<div class="panel-body">
-				<table class="table table-striped table-hover">
+				<table id="id_table" class="table table-striped table-hover">
 					<thead>
 						<th>Numero</th>
 						<th>Imei</th>
@@ -51,9 +53,9 @@ if ($res== 1) {
 						<th>Estado</th>	
 						<th>Referencia</th>	
 						<th>Plan</th>	
-						<th colspan="3">Action</th>
+						<th>Action</th>
 					</thead>
-					<tbody id="myTable">
+					<tbody>
 					<?php while ($row = mysqli_fetch_array($datos)){ ?>
 						<tr>
 						<td  scope="row"> <?php echo $row['Numero'];?></td>
