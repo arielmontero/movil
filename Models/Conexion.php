@@ -4,9 +4,9 @@ class Conexion{
 	
 			private $datos= array(
 				'host' => "localhost" ,
-				'user' => "movil" ,
-				'pass' => "movil_1717" ,
-				'db' => "movil" ,
+				'user' => "userbd" ,
+				'pass' => "password" ,
+				'db' => "namebd" ,
 				 );
 			private $con;
 
