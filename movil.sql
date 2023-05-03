@@ -471,16 +471,9 @@ CREATE TABLE IF NOT EXISTS `Historial` (
 --
 
 INSERT INTO `Historial` (`ID_Historial`, `Sim_ID`, `Linea_ID`, `Equipo_ID`, `Plan_ID`, `User_ID`, `Entidad`, `Comentario`, `Fecha`) VALUES
-(39, 271, 1, 1, 1, 1, 'Linea', 'Se cambia el imei 89345678910111213269, debido a que se rompió y se asigna nuevo imei 35446410908321201', '2021-05-12 00:44:05'),
 (40, 1, 1, 2, 1, 1, 'Equipo', 'por error sadhasdhaksjdh', '2022-03-30 21:17:35'),
-(41, 328, 1, 1, 1, 1, 'Linea', 'cambio de plan , por que se lo merece', '2023-04-27 17:09:45'),
 (42, 1, 1, 3, 1, 1, 'Equipo', 'este usuario pide otro equipo mas completo', '2023-04-27 17:11:05'),
-(43, 1, 1, 2, 1, 1, 'Equipo', 'el equipo no funciona bien ', '2023-04-27 17:12:40'),
-(44, 330, 1, 1, 1, 1, 'Linea', 'la linea se suspende por ejemplo ', '2023-04-27 18:27:57'),
-(45, 330, 1, 1, 1, 1, 'Linea', 'la linea queda disponible por ejemplo', '2023-04-27 18:28:33'),
-(46, 330, 1, 1, 1, 1, 'Linea', 'suspendo la lina por ejemplo ', '2023-04-27 18:33:19'),
-(47, 329, 1, 1, 1, 1, 'Linea', 'se le cambia el plan por ejemplo ', '2023-04-27 18:34:40'),
-(48, 330, 1, 1, 1, 1, 'Linea', 'activo para probar el chofer , nuevo con select ', '2023-05-02 10:39:19');
+(43, 1, 1, 2, 1, 1, 'Equipo', 'el equipo no funciona bien ', '2023-04-27 17:12:40');
 
 -- --------------------------------------------------------
 
@@ -515,12 +508,7 @@ CREATE TABLE IF NOT EXISTS `Linea` (
 
 INSERT INTO `Linea` (`ID_Linea`, `Sim_ID`, `Usuario`, `Funcion`, `Organismo_ID`, `Area_ID`, `Plan_ID`, `Equipo_ID`, `Fecha`, `User_ID`) VALUES
 (1, 1, 'N/A', 'N/A', 1, 1, 1, 1, 'N/A', 1),
-(3, 271, 'Luciano Montero', 'Director General', 20, 2, 27, 1, '2021-05-11 23:00:02', 1),
-(4, 6, 'Marcelo Roldan', 'Secretario de Modernización', 22, 29, 22, 1, '2022-03-30 21:08:54', 1),
-(5, 328, 'Ariel Montero', 'Empleado', 2, 9, 23, 3, '2023-04-27 17:07:30', 1),
-(6, 329, 'Matias ', 'programador', 5, 18, 21, 4, '2023-04-27 18:31:44', 1),
-(8, 330, 'gabriel roldan', 'Chofer', 2, 2, 27, 4, '2023-05-02 10:39:40', 1),
-(9, 331, 'Horacio guarani', 'Cantante', 5, 7, 25, 5, '2023-05-02 10:53:31', 1);
+(2, 6, 'Marcelo Roldan', 'Secretario de Modernización', 22, 29, 22, 1, '2022-03-30 21:08:54', 1);
 
 -- --------------------------------------------------------
 
@@ -582,34 +570,10 @@ INSERT INTO `Permiso` (`ID_Permiso`, `User_ID`, `App_ID`) VALUES
 (13, 1, 10),
 (14, 1, 11),
 (16, 1, 12),
-(17, 23, 9),
-(18, 23, 10),
-(19, 23, 8),
-(20, 23, 2),
-(22, 23, 4),
-(23, 23, 3),
-(24, 23, 11),
 (25, 1, 13),
-(26, 23, 13),
 (27, 1, 14),
 (28, 1, 15),
-(29, 1, 16),
-(30, 24, 8),
-(31, 24, 9),
-(32, 24, 10),
-(33, 24, 11),
-(34, 24, 12),
-(35, 24, 13),
-(36, 24, 14),
-(37, 24, 15),
-(38, 24, 16),
-(39, 25, 13),
-(40, 22, 8),
-(41, 22, 10),
-(42, 26, 9),
-(43, 26, 12),
-(44, 26, 13),
-(45, 26, 11);
+(29, 1, 16);
 
 -- --------------------------------------------------------
 
