@@ -8,10 +8,10 @@
 					</tbody>
 				</table>
 			</div>
-      <?php
+<?php
 if($_SESSION["autentica"] !== "SIP"){
 ?>
- <div class="container">
+  <div class="container">
     <div class="row">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
@@ -20,7 +20,7 @@ if($_SESSION["autentica"] !== "SIP"){
             <hr class="my-4">
             <form class="form-signin" action="<?php echo URL;?>login/login" method="POST">
               <div class="form-label-group">
-                <label for="inputEmail">Usuario</label>
+                <label for="inputEmail"> Usuario </label>
                 <input type="text"  class="form-control" name="User" placeholder="Usuario" required autofocus>
               </div>
               <div class="form-label-group">
@@ -35,9 +35,9 @@ if($_SESSION["autentica"] !== "SIP"){
       </div>
     </div>
   </div>
-<?php } else {
+  <?php } else {
   ?> <h3 class="titulo">Bienvenido <?php echo "  " . $_SESSION["usuarioactual"];?></h3>
-<?php } ?>
- </div>
+  <?php } ?>
+  </div>
 </div>
 

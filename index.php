@@ -12,7 +12,7 @@
 	define('DS', DIRECTORY_SEPARATOR);
 	define('ROOT', realpath(dirname(__FILE__)).DS);
 	//define('URL', "http://192.168.101.253/notas/");
-	define('URL', "http://www.dircom.larioja.gob.ar/movil/");
+	define('URL', "http://localhost/movil/");
 
 
 @session_start();

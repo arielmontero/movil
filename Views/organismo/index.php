@@ -13,8 +13,8 @@ $res=$organismo->ControlPermiso($us,$per);
 
 if ($res== 1) {
 	?>
-<div class="box-principal">
-	<h3 class="titulo">Organismo</h3>
+<div class="box-principal text-xl-center">
+	<h3 class="titulo"> Organismo </h3>
 		<div class="panel panel-success">
 			<div class="panel-heading">
 				<table class="table table-striped table-hover">
@@ -39,8 +39,8 @@ if ($res== 1) {
 						<td scope="row"> <?php echo $row['Organismo'];?></td>
 						<td>
 						<a href="<?php echo URL;?>organismo/ver/<?php echo $row['ID_Organismo'];?>" class="btn btn-primary">Ver</a>
-						<a href="<?php echo URL;?>organismo/editar/<?php echo $row['ID_Organismo'];?>" class="btn btn-primary">Editar</a>
-						<a href="<?php echo URL;?>organismo/eliminar/<?php echo $row['ID_Organismo'];?>" class="btn btn-primary">Eliminar</a>
+						<a href="<?php echo URL;?>organismo/editar/<?php echo $row['ID_Organismo'];?>" class="btn btn-secondary  ">Editar</a>
+						<a href="<?php echo URL;?>organismo/eliminar/<?php echo $row['ID_Organismo'];?>" class="btn btn-danger">Eliminar</a>
 						</td>
 						</tr>
 					<?php }	?>
