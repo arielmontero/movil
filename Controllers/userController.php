@@ -13,8 +13,8 @@ use Models\Permiso as Permiso;
 		}
 
 		public function index(){
-		  $datos = $this->user->listar();
-		  return $datos;
+			$datos = $this->user->listar();
+			return $datos;
 		}
 			public function ControlPermiso($us,$per){
 			$this->permiso->set("us", $us);
@@ -30,6 +30,7 @@ use Models\Permiso as Permiso;
 				$this->user->set("Estado", $_POST['Estado']);
 				$this->user->add();
 				header("Location: " . URL . "user");
+				?><META HTTP-EQUIV="refresh" CONTENT="0;URL= <?php echo URL;?>user"><?php
 			}	
 		}
 

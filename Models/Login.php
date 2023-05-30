@@ -1,12 +1,11 @@
 <?php namespace Models;
 
 //include_once("Conexion.php");
- class Login{
+class Login{
  	private $id;
  	private $User;
  	private $Clave;
  	private $Estado;
-	
  	private $con;
 
 		public function __construct(){

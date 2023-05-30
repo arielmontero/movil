@@ -2,9 +2,9 @@
 
 <?php
 if ($datos['User_ID']== "") {
- ?>
+?>
 <h3 class="titulo">El Numero ingresado no existe<hr></h3>
- <?php
+<?php
 }else{
 ?>
 <h3 class="titulo">Listar Los Datos del User_ID: <?php echo $datos['User_ID']; ?><hr></h3>
@@ -22,7 +22,6 @@ if ($datos['User_ID']== "") {
             <li class="list-group-item">
               <b>App_ID: </b><?php echo $datos['App_ID']; ?>
             </li>
-
           </ul>
         </div>
       </div>
